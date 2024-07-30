@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Message</title>
+  <link href="assets/img/logo/Untitled-1.jpg" rel="icon">
+
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+      background: #f3f4f6;
+      font-family: Arial, sans-serif;
+    }
+    .success-message {
+      font-size: 24px;
+      font-weight: bold;
+      color: #023404;
+      margin-top: 20px;
+      animation: fadeIn 2s;
+    }
+    .tick {
+      font-size: 100px;
+      color: #4CAF50;
+      animation: bounceIn 1s;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #160000;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      animation: fadeIn 3s;
+    }
+    .back-button:hover {
+      background-color: #0a7d0f;
+      color: #f3f4f6;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+      animation: logoFadeInScale 4s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes bounceIn {
+      from {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @keyframes logoFadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <div class="content">
+    <img src="assets/img/logo/Untitled-1.jpg" alt="my-logo" class="logo">
+    <div class="tick">&#10004;</div>
+    <p class="success-message"><span style="color: brown;">You made the right choice</span>, your message has been sent <span style="color: brown;">successfully!</span></p>
+    <p class="success-message"><span style="color: brown;">We'll get back you soon!</span></p>
+    <a href="index.html" class="back-button">Back to Home</a>
+  </div>
+
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
+
+</body>
+</html>

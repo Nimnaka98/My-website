@@ -1,0 +1,230 @@
+#volunteer-work {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.volunteer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.volunteer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: auto;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+.carousel img {
+    flex: none;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.volunteer-description {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .volunteer-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .carousel-container {
+        max-width: 500px;
+    }
+    .volunteer-description {
+        text-align: left;
+    }
+}
+
+/* 
+EXTRA CURRICULAR ACTIVIES SECTION - STARTS 
+*/
+
+.extracurricular-xxl {
+    padding: 60px 0;
+  }
+  .section-title-xxl {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .extracurricular-content-xxl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .activity-box-xxl {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .activity-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .activity-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .achievements-list li {
+    margin-bottom: 10px;
+  }
+
+/* 
+EXTRA CURRICULAR ACTIVIES SECTION - ENDS 
+*/
+
+/* 
+CERTIFICATIONS SECTION - STARTS
+*/
+
+.certifications-xxl {
+  padding: 45px 0;
+}
+.section-title-xxl {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.certifications-content-xxl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.certifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.certifications-list li {
+  margin-bottom: 5px;
+}
+.text-center {
+  text-align: center;
+}
+.liked {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #149ddd;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 300px;
+}
+button:hover {
+  background-color: #035880;
+  color: rgb(210, 222, 245);
+}
+
+/* 
+CERTIFICATIONS SECTION - ENDS 
+*/
+
+/* 
+INTERESTS SECTION - STARTS
+*/
+
+.interests-xxl {
+  padding: 60px 0;
+}
+.section-title-xxl {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.interests-content-xxl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.interest-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.interest-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.interest-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+}
+.interest-image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 20px solid transparent;
+  border-radius: 50%;
+  animation: blink 2.5s infinite;
+}
+@keyframes blink {
+  0% {
+    border-color: #a4d0fd;
+  }
+  50% {
+    border-color: #add6ff;
+  }
+
+  100% {
+    border-color: white;
+  }
+}
+.interest-box h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* 
+INTERESTS SECTION - STARTS
+*/

@@ -1,0 +1,260 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  display: none;
+}
+
+.banner {
+  position: relative;
+  width: 80%;
+  max-width: 1920px;
+  height: 60%;
+  max-height: 1080px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nature-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../images/banner/banners-new.jpg') no-repeat center center/cover;
+}
+
+.leaf {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('../images/banner/leaf-poster.png') no-repeat center center/contain;
+  animation: fall 5s infinite;
+}
+
+.leaf1 {
+  top: -50px;
+  left: 20%;
+  animation-duration: 4s;
+}
+
+.leaf2 {
+  top: -50px;
+  left: 50%;
+  animation-duration: 6s;
+}
+
+.leaf3 {
+  top: -50px;
+  left: 80%;
+  animation-duration: 5s;
+}
+
+.leaf4 {
+  top: -50px;
+  left: 90%;
+  animation-duration: 7s;
+}
+
+.leaf5 {
+  top: -50px;
+  left: 30%;
+  animation-duration: 3s;
+}
+
+.leaf6 {
+  top: -50px;
+  left: 10%;
+  animation-duration: 2s;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 208, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-content h1 {
+  font-size: 3.5em;
+}
+
+.banner-content p {
+  font-size: 1.5em;
+}
+
+.banner button, .popup button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: none;
+}
+
+.popup h1 {
+    color: #dec41b;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+.popup-content {
+  background-image: url('https://i.redd.it/4vztk5m7p9651.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.popup-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  border-radius: 10px;
+  z-index: 0; /* Place the overlay behind the content */
+}
+
+.popup-content > * {
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.popup-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    width: 90%;
+    max-width: 900px;
+    height: 70%;
+    max-height: 720px;
+  }
+
+  .banner-content h1 {
+    font-size: 2em;
+  }
+
+  .banner-content p {
+    font-size: 1.2em;
+  }
+
+  .popup-content img {
+    max-width: 100%;
+  }
+}
+
+/* Animations for the Yes/Close Buttons */
+
+/* Basic button styles */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #016a04; /* Green background */
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  z-index: 0;
+  animation: ripple 1.5s ease-in-out infinite;
+}
+
+button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Floating animation for the buttons */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#yesButton {
+  animation: float 3s ease-in-out infinite;
+}
+
+#closePopup {
+  animation: float 3s ease-in-out infinite reverse;
+}
+

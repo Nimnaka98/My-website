@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nimnaka Kumaradasa's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo/Untitled-1.jpg" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/whatsmy.css" rel="stylesheet">
+  <link href="assets/css/volunteer.css" rel="stylesheet">
+  <!-- The styles/script for the pop up image -->
+  <link href="assets/css/popups.css" rel="stylesheet">
+  <script src="assets/js/pops.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <style>
+    .download-btn {
+      background-color: #007bff; /* Change this to your desired color */
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      padding-bottom: 2px;
+    }
+    
+    .download-btn:hover {
+      background-color: #035e1e;
+      color: rgb(195, 255, 55);
+    }   
+    
+    .social-links a {
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  
+    .social-links a:hover {
+      transform: scale(1.1);
+    }
+  
+    /* .pinterest:hover i {
+      color: #E60023; Pinterest red 
+    } */
+  
+    .instagram:hover i {
+      color: #C13584; /* Instagram gradient pink */
+    }
+  
+    .behance:hover i {
+      color: #1769FF; /* Behance blue */
+    }
+  
+    .dribbble:hover i {
+      color: #EA4C89; /* Dribbble pink */
+    }
+  
+    .github:hover i {
+      color: #333; /* GitHub dark gray */
+    }
+  
+    .linkedin:hover i {
+      color: #0039b5; /* LinkedIn blue */
+    }
+
+    .medium:hover i {
+      color: #013824; /* Medium green */
+    }
+  
+    /* .tiktok:hover i {
+      color: #010101;  TikTok black 
+    } */
+   
+    /* Additional styling to ensure the icons have some default color */
+    .social-links i {
+      color: #505050; /* Default color */
+      font-size: 22px; /* Adjust icon size as needed */
+    }
+
+    .progress-bar {
+      background-color: #00a86b; /* Default progress bar color */
+    }
+  
+    .progress-bar.green {
+      background-color: #28a745; /* Green theme for soft skills */
+    }
+
+    .mobile-img {
+      display: none;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    @media (max-width: 767px) {
+        .mobile-img {
+          display: block;
+        }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+  <header id="header" class="header dark-background d-flex flex-column">
+
+  <!-- This is the pop up "Climate Change Banner" section - Starts -->
+  <div id="overlay" class="overlay">
+    <div id="banner" class="banner">
+      <div class="nature-background">
+        <div class="leaf leaf1"></div>
+        <div class="leaf leaf2"></div>
+        <div class="leaf leaf3"></div>
+        <div class="leaf leaf4"></div>
+        <div class="leaf leaf5"></div>
+        <div class="leaf leaf6"></div>
+        <div class="banner-content">
+          <h1>Welcome to my portfolio website</h1>
+          <p>Are you acting against climate change?</p>
+          <button id="yesButton">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <img src="assets/images/banner/c8af38d30db7c5aafc1e1081b7374ea3.gif" alt="Thank You GIF">
+      <h1>Thank you for your collaboration!</h1>
+      <p class="shine">Let's heal the world together.</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>   
+  <!-- This is the pop up "Climate Change Banner" section - Ends -->
+    
+  <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="assets/images/1678248624754.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Nimnaka Kumaradasa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <!-- <a target="_blank" href="https://www.pinterest.com/yourprofile" class="pinterest"><i class="bi bi-pinterest"></i></a> -->
+      <a target="_blank" href="https://www.instagram.com/nimnaka.kumaradasa" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a target="_blank" href="https://www.behance.net/nimnakakumarad" class="behance"><i class="bi bi-behance"></i></a>
+      <a target="_blank" href="https://dribbble.com/Nimu1998" class="dribbble"><i class="bi bi-dribbble"></i></a>
+      <a target="_blank" href="https://github.com/Nimnaka98" class="github"><i class="bi bi-github"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/nimnaka-kumaradasa-07283923a/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    <a target="_blank" href="https://medium.com/@yourusername" class="medium"><i class="bi bi-medium"></i></a>
+          <!-- <a target="_blank" href="https://www.tiktok.com/@nimnaka.kumaradasa" class="tiktok"><i class="bi bi-tiktok"></i></a> -->
+    </div>     
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Find More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#volunteer"><i class="bi bi-hand-thumbs-up navicon"></i> Volunteer Works</a></li>            
+       <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#volunteer">Volunteer Works</a></li>
+                <li><a href="#extra-curricular">Ex</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li> -->
+            <!-- <li><a href="#extra-curricular"><i class="bi bi-trophy navicon"></i> Sports</a></li> -->
+            <li><a href="#certifications"><i class="bi bi-award navicon"></i> Certifications</a></li>
+            <li><a href="#interests"><i class="bi bi-heart navicon"></i> Interests</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bgsx copy.jpg" alt="" class="mobile-img">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h1>Welcome <em>to</em></h1>
+        <h2 style="color: rgb(0, 35, 88);">Nimnaka Kumaradasa</h2>
+        <p style="color: brown;">
+            I'm <span class="typed" data-typed-items="a Designer, a Developer, a Freelancer, a Writer, an Artist, an Environmental Activist, a Software | Cyber Enthusiast">Designer</span>
+            <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+            <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
+    </div>    
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p style="text-align: justify;">As an accomplished graduate in the field of Computer Science (Software Engineering), with a keen interest in UI/UX design, I am committed to making a significant contribution to any organization I am a part of. My objective is to excel in my role and contribute to the future advancement and success of the organization by combining my technical expertise with a deep understanding of user interface and user experience design. I aspire to attain the highest level of proficiency in both software engineering and UI/UX, continuously learning and growing as a professional. Moreover, I aim to cultivate the qualities of a distinguished and approachable corporate leader, while maintaining my individuality and distinctive personality. This dual focus on software engineering and UI/UX positions me to bridge the gap between technical excellence and user-centered design, driving innovation and creating exceptional digital experiences for users.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img copy.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              Combining my expertise in software engineering with a passion for UI/UX design, I create seamless and engaging digital experiences.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Full Name:</strong> <span>Hewa Kosgodage Nimnaka Yasith Ravishan Kumaradasa</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 April 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.nimnakakumaradasa.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+94 77 0527 520</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Colombo, Sri Lanka</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors of Computer Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>nimnakakumaradasa1@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3" style="text-align: justify;">With a strong foundation in both software engineering and UI/UX design, I specialize in creating intuitive, user-friendly digital products. My approach integrates technical excellence with a deep understanding of user needs, ensuring every project not only meets but exceeds client and user expectations. I am dedicated to continuous learning and innovation, striving to stay ahead of industry trends and deliver cutting-edge solutions.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+                <i class="bi bi-star"></i>
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>%
+                <p><strong>Quality</strong> <span>rerum asperiores dolor</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Technical Skills</h2>
+        <p>Combining technical proficiency with creative design to deliver exceptional digital experiences.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>WordPress/CMS</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>React</span> <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Photoshop</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CorelDraw</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>After Effects</span> <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Figma</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Wireframing</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <section id="soft-skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Soft Skills</h2>
+        <p>Essential interpersonal skills for creating harmonious and productive work environments.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+    
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Communication</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar green" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>Teamwork</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar green" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Problem Solving</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar green" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>Leadership</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar green" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+    
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <a href="assets/pdf/Nimnaka-Resume-July.pdf" class="download-btn" download>Download CV</a><br>
+        <p style="text-align: justify;">I am a professional with a background in IT, possessing holistic knowledge of Software Development and Graphic Design. Throughout my education and work experience, I have demonstrated high levels of motivation, work ethic, and teamwork skills. My aspiration is to contribute to the future development and success of the company by leveraging my skills and dedication.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Brandon Johnson</h4>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Portland par 127,Orlando, FL</li>
+                <li>(123) 456-7891</li>
+                <li>alice.barkley@example.com</li>
+              </ul>
+            </div> --> <!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelors of Computer Science Major in Software Engineering</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>Edith Cowan University, 288, Sri Jayawardhenapura Mawatha, Rajagiriya, Sri Lanka.</em></p>
+              <p>• Successfully completed the Bachelor’s in Computer Science degree at Edith Cowan University.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Diploma in Computer Science</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>Australian College of Business &amp; Technology, Colombo 003, Sri Lanka.</em></p>
+              <p>• Successfully completed the Diploma Level of Computer Science.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Diploma in Adobe Photoshop</h4>
+              <h5>2015</h5>
+              <p><em>New Sense Education Centre, Moratuwa, Sri Lanka.</em></p>
+              <p>• Successfully completed the Diploma Level of Adobe Photoshop.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Frontend Developer | UI/UX Designer</h4>
+              <h5>2023 November - Present</h5>
+              <p><em>Nekfa Australia PVT LTD, Colombo 002, Western Province, Sri Lanka.</em></p>
+              <ul>
+                <li>Assist in the development of websites for clients using HTML, CSS, JavaScript, Bootstrap, and WordPress.</li>
+                <li>Moderate and develop dynamic digital content for interactive screens deployed at various locations.</li>
+                <li>Collaborate with stakeholders to gather requirements and implement solutions that meet client needs effectively.</li>
+                <li>Ensure websites are responsive and optimized for various devices for optimal performance.</li>
+                <li>Developed the UK project <a target="_blank" href="https://cerinca.co.uk/">Cerinca</a> site.</li>
+                <li>To view the official websites of the <a target="_blank" href="https://negombo.mc.gov.lk/">Negombo Municipal Council</a> (Sri Lanka), the <a target="_blank" href="https://kalutara.mc.gov.lk/">Kalutara Municipal Council</a> (Sri Lanka) and the <a target="_blank" href="https://attanagalla.ps.gov.lk/">Attanagalla Pradeshiya Sabha</a> (Sri Lanka).</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Information Security (Internship)</h4>
+              <h5>2023 April - 2023 November</h5>
+              <p><em>Hemas Holdings PLC, Colombo 002, Western Province, Sri Lanka.</em></p>
+              <ul>
+                <li>Assisted in the monitoring of Security Information and Event Management (SIEM) scenarios and notified them relevant SBUs’/parties and recommended actions to address potential security incidents.</li>
+                <li>Proficiently utilized ManageEngine within a ServiceDesk Plus framework to manage ticket requests and inquiries. Ensured prompt issue resolution and provided exemptional support for end-users.</li>
+                <li>Conducted a comprehensive evaluation and comparison of various Web Application Firewalls (WAF) along with their distributor and suppliers.</li>
+                <li>Applied design skills to create infographics and posters for company related events and innovative security awareness campaigns.</li>
+                <li>Developed a Python script to convert .txt files to .log format, enhancing data processing and automation capabilities.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Data Entry Analyst</h4>
+              <h5>2020 October - 2020 November</h5>
+              <p><em>Horizon College, Malabe, Western Province, Sri Lanka.</em></p>
+              <ul>
+                <li>Entered employee salary data and student details to the SAP system.</li>
+                <li>Helped SAP team in finalizing data documents.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p style="text-align: justify;">Showcasing a diverse array of projects that highlight my expertise in software development and graphic design, demonstrating my ability to deliver innovative and effective solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-web">Web Design</li> <!-- app -->
+            <li data-filter=".filter-ui">Mobile App UI</li> 
+            <li data-filter=".filter-graphic">Graphic Design</li> <!-- products -->
+            <li data-filter=".filter-vector">Vector Arts</li> <!-- branding -->
+            <li data-filter=".filter-infographics">Infographics/Posters</li> <!-- books -->
+            <li data-filter=".filter-videos">Videos</li> 
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/web/original-066a994312ace582ee4e386fada543f5.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web Design 1</h4>
+                  <p>This is the front page of Negombo Municipal Council Official Website.</p>
+                  <a href="assets/images/portfolio/web/original-066a994312ace582ee4e386fada543f5.png" title="Web Design 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphic">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/arts/Joker Ps.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Graphic Design - Joker</h4>
+                  <p>This is an art of Joker - Batman.</p>
+                  <a href="assets/images/portfolio/arts/Joker Ps.jpg" title="Graphic Joker Photo" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-vector">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/vector/Kristen Stewart.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Kristen Stewart</h4>
+                  <p>Vector art of Actress Kristen Stewart.</p>
+                  <a href="assets/images/portfolio/vector/Kristen Stewart.jpg" title="Kristen Stewart" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/mobile/Untitled-2 copy.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Music App UI Design</h4>
+                  <p>User Interface of a music application.</p>
+                  <a href="assets/images/portfolio/mobile/Untitled-2 copy.jpg" title="Music App UI Design" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infographics">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/posters/245088213_316661233594800_710199495657048712_n.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Poster 1</h4>
+                  <p>This was made for posting on the Instagram platform.</p>
+                  <a href="assets/images/portfolio/posters/245088213_316661233594800_710199495657048712_n.jpg" title="Poster 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/web/Untitled-1 copy.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web Design 2</h4>
+                  <p>Sample web design for 'Kapchru Kinnas' fashion brand.</p>
+                  <a href="assets/images/portfolio/web/Untitled-1 copy.jpg" title="Web Design 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphic">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/arts/neon light.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Neon Light Boy</h4>
+                  <p>A sample art of Neon Light Boy.</p>
+                  <a href="assets/images/portfolio/arts/neon light.jpg" title="Neon Light Boy" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-vector">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/vector/L twenty Eight.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Vector art of a Girl</h4>
+                  <p>This is closet face of a girl - Vector art</p>
+                  <a href="assets/images/portfolio/vector/L twenty Eight.jpg" title="Vector art of a Girl" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infographics">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/posters/bbed08184407411.6551c14b145c6.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>බයිලා | Baila</h4>
+                  <p>I created this for my university event.</p>
+                  <a href="assets/images/portfolio/posters/bbed08184407411.6551c14b145c6.jpg" title="බයිලා | Baila" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-videos">
+              <div class="portfolio-content h-100">
+                  <video class="img-fluid" controls>
+                      <source src="assets/images/portfolio/videos/Comp 1_4.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div class="portfolio-info">
+                      <h4>Video Ad</h4>
+                      <p>This was made for posting on the Instagram platform. A university event.</p>
+                      <a href="assets/images/portfolio/videos/Comp 1_4.mp4" title="Video Ad" data-gallery="portfolio-gallery-book" class="glightbox preview-link">
+                          <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/mobile/Untitled-3 copy.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Music App UI Design</h4>
+                  <p>User Interface of a music application.</p>
+                  <a href="assets/images/portfolio/mobile/Untitled-3 copy.jpg" title="Music App UI Design" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+          
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/web/Untitled-1e copy (1).jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web Design 3 - Fitness</h4>
+                  <p>This is a sample web design for a fitness service.</p>
+                  <a href="assets/images/portfolio/web/Untitled-1e copy (1).jpg" title="Web Design 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphic">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/arts/Lady Twenty 2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Girl Design</h4>
+                  <p>Design of a fashionable girl.</p>
+                  <a href="assets/images/portfolio/arts/Lady Twenty 2.jpg" title="Girl Design" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-vector">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/vector/Rami Malek 1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Rami Malek</h4>
+                  <p>Vector art of Actress Rami Malek.</p>
+                  <a href="assets/images/portfolio/vector/Rami Malek 1.jpg" title="Rami Malek" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infographics">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/posters/246248414_4677232418965077_3435431841584747286_n.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Poster Design</h4>
+                  <p>This was made for posting on the Instagram platform.</p>
+                  <a href="assets/images/portfolio/posters/246248414_4677232418965077_3435431841584747286_n.jpg" title="Poster Design" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/web/original-1fc33bb6c29d410283d465fa59401081.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web Design 4</h4>
+                  <p>Sample web design for 'Kapchru Kinnas' fashion brand.</p>
+                  <a href="assets/images/portfolio/web/original-1fc33bb6c29d410283d465fa59401081.jpg" title="Web Design 4" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-videos">
+              <div class="portfolio-content h-100">
+                  <video class="img-fluid" controls>
+                      <source src="assets/images/portfolio/videos/Logo_Animation.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div class="portfolio-info">
+                      <h4>Logo Animation</h4>
+                      <p>This is a sample logo animation.</p>
+                      <a href="assets/images/portfolio/videos/Logo_Animation.mp4" title="Logo Animation" data-gallery="portfolio-gallery-book" class="glightbox preview-link">
+                          <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphic">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/arts/Lady 2 ps2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Girl Design</h4>
+                  <p>Poster Design of arts.</p>
+                  <a href="assets/images/portfolio/arts/Lady 2 ps2.jpg" title="Poster Design" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/web/original-e3c5f277422d5c2c5c4184ea7d5d09db.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web Design 5 - Cerinca UK Site</h4>
+                  <p>This is a sample web design for an IT Solutions Company in UK.</p>
+                  <a href="assets/images/portfolio/web/original-e3c5f277422d5c2c5c4184ea7d5d09db.png" title="Web Design 5" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/web/Screenshot 2024-07-29 124720.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web Design 7 - Kalutara Municipal Council, Sri Lanka</h4>
+                  <p>The Official Website of Kalutara Municipal Council</p>
+                  <a href="assets/images/portfolio/web/Screenshot 2024-07-29 124720.png" title="Web Design 7" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/mobile/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App UI Design</h4>
+                  <p>User Interface of an application.</p>
+                  <a href="assets/images/portfolio/mobile/app-2.jpg" title="App UI Design" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infographics">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/posters/07728c184419931.6551fa87b881f.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Poster Design</h4>
+                  <p>This was made for posting on the Instagram platform.</p>
+                  <a href="assets/images/portfolio/posters/07728c184419931.6551fa87b881f.jpg" title="Poster Design" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-vector">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/vector/Michael Jackson crop.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Michael Jackson</h4>
+                  <p>Vector art of King of Pop - Michael Jackson.</p>
+                  <a href="assets/images/portfolio/vector/Michael Jackson crop.jpg" title="Michael Jackson" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/web/original-6613ff06f8e0ef968b8bde0a7e69e2f7.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Web Design 6</h4>
+                  <p>This is a sample web design for a restaurent.</p>
+                  <a href="assets/images/portfolio/web/original-6613ff06f8e0ef968b8bde0a7e69e2f7.jpg" title="Web Design 6" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-videos">
+              <div class="portfolio-content h-100">
+                  <video class="img-fluid" controls>
+                      <source src="assets/images/portfolio/videos/MAIN_2.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div class="portfolio-info">
+                      <h4>Logo Animation</h4>
+                      <p>This is a sample logo animation.</p>
+                      <a href="assets/images/portfolio/videos/MAIN_2.mp4" title="Logo Animation" data-gallery="portfolio-gallery-book" class="glightbox preview-link">
+                          <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/mobile/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App UI Design</h4>
+                  <p>User Interface of an application.</p>
+                  <a href="assets/images/portfolio/mobile/app-1.jpg" title="App UI Design" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphic">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/arts/Scoob.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Scooby Doo!</h4>
+                  <p>Art of cartoon character - Scooby Doo!</p>
+                  <a href="assets/images/portfolio/arts/Scoob.jpg" title="Scoob!" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infographics">
+              <div class="portfolio-content h-100">
+                <img src="assets/images/portfolio/posters/244748499_296546871974317_5038729390851792685_n.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Poster Design- Sri Lankan Sloth Bear</h4>
+                  <p>This was made for posting on the Instagram platform.</p>
+                  <a href="assets/images/portfolio/posters/244748499_296546871974317_5038729390851792685_n.jpg" title="Sri Lankan Sloth Bear" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p style="text-align: justify;">We specialize in delivering exceptional design and development services tailored to your 
+          specific needs. From innovative UI/UX design to seamless web development, our comprehensive solutions are crafted to 
+          enhance your digital presence and achieve your business goals. Discover how our expertise can elevate your 
+          online experience.</p> 
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
+            <div>
+              <h4 class="title"><a href="#contact" class="stretched-link">Web Development/Deployment</a></h4>
+              <p class="description">Our web development services ensure your website is robust, scalable, and tailored to your business needs. 
+                From front-end design to back-end functionality, we deliver websites that are visually appealing and functionally seamless. 
+                We also provide deployment services to ensure your website is launched smoothly and runs efficiently on the chosen platform.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
+            <div>
+              <h4 class="title"><a href="#contact" class="stretched-link">UI/UX Design</a></h4>
+              <p class="description">Our UI/UX design services focus on creating user-centric designs that provide an intuitive 
+                and engaging experience. We conduct thorough research to understand your users' needs and craft designs that are 
+                not only visually appealing but also easy to navigate, enhancing overall user satisfaction.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-brush"></i></div>
+            <div>
+              <h4 class="title"><a href="#contact" class="stretched-link">Graphic Designing</a></h4>
+              <p class="description">Our graphic design services aim to create visually striking and memorable designs that 
+                effectively communicate your brand's message. From logos and branding materials to marketing collaterals, 
+                our designers work closely with you to ensure every design element aligns with your brand identity.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+            <div>
+              <h4 class="title"><a href="#contact" class="stretched-link">Software Development</a></h4>
+              <p class="description">We offer custom software development services to meet your specific business requirements. 
+                Our team of experienced developers can build software solutions from scratch, ensuring they are tailored to 
+                your unique needs and help streamline your business processes.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
+            <div>
+              <h4 class="title"><a href="#contact" class="stretched-link">Mobile App Development</a></h4>
+              <p class="description">We specialize in creating high-quality mobile applications for both iOS and Android platforms. 
+                Our mobile app development services cover everything from initial concept and design to development, testing, 
+                and deployment. We ensure your app provides a seamless user experience and robust functionality.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-cart"></i></div>
+            <div>
+              <h4 class="title"><a href="#contact" class="stretched-link">E-commerce Solutions</a></h4>
+              <p class="description">Our e-commerce solutions are designed to help you build and maintain a successful online store. 
+                We provide comprehensive services including website development, payment gateway integration, product management, 
+                and ongoing support to ensure your e-commerce platform operates smoothly and effectively meets your business goals.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- What's my clients get?? -->
+    <section id="services" class="services-xxl xxl">
+      <div class="container section-title-xxl" data-aos="fade-up">
+        <h2>What my clients get?</h2>
+        <p>Check out the below to see if we have what you're looking for!</p>
+      </div>
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row services-content-xxl">
+          <div class="col-lg-6 col-md-6">
+            <div class="service-box-xxl" data-bg="url('assets/img/background-6517956.jpg')">
+              <h3>Free estimation</h3>
+              <p>Free project estimation and deep understanding of your needs before the project starts – this is the first saving you get working in cooperation with us.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="service-box-xxl" data-bg="url('assets/img/sky-7232494.jpg')">
+              <h3>On budget, on-time</h3>
+              <p>Work done in accordance with specifications, within budget, and on time. Always predictable and stable cooperation.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="service-box-xxl" data-bg="url('assets/img/painting-2407262.jpg')">
+              <h3>High-quality products</h3>
+              <p>We'll make you a fully professional app, written with modern technology, that has no bugs, and optimized performance, so you will be able to develop and use it for years.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="service-box-xxl" data-bg="url('assets/img/texture-1668079.jpg')">
+              <h3>Tailored Solutions</h3>
+              <p>We prioritize your unique vision by delivering customized solutions that align perfectly with your business goals, ensuring your app stands out in the market.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const serviceBoxes = document.querySelectorAll('.service-box-xxl');
+        serviceBoxes.forEach(box => {
+          const bgImage = box.getAttribute('data-bg');
+          box.style.backgroundImage = bgImage;
+        });
+      });
+    </script>
+    
+    <!-- End Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What People Says About Me</h2>
+        <p>Hear what clients and colleagues have to say about my work and dedication..</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Nimnaka was one of my students at ECU Sri Lanka. He is well committed for his education, class room works and necessary submissions. As an undergraduate student, I see a good potential with him specially related to the programming. I highly believe that, he is having the strength of applying his knowledge to the industry and he will become a wonderful technical character in the industry in future.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/images/1608556628005.jpg" class="testimonial-img" alt="">
+                <h3>Inoshi Madushika</h3>
+                <h4>Technical Consultant &amp; Visiting Lecturer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Nimnaka Kumaradasa was my student. Within the period of his studies, He has shown himself as a disciplined, reliable and conscientious student with the comprehensive knowledge in different areas.
+
+                    In the course of his studies, Nimnaka showed himself as a responsible, motivated, hard-working student with excellent analytical skills. His steady academic background, outstanding personal qualities and practical experience allow him to contribute to any position that he is going to take the responsibility or any study program that he is intending to select in the future.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/images/1697291289422.jpg" class="testimonial-img" alt="">
+                <h3>Dr. Anuradha Senadheera</h3>
+                <h4>Visiting Lecturer &amp; Class Teacher</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Nimnaka is an outstanding individual. We both have studied together at Edith Cowan college Srilanka. He has a lot of IT skills and good knowledge, when it comes to programming and working with data. I have observed him very closely enhancing a lot of programming skills. I highly recommend him for any organisation to hire upon his talent and success.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/images/1712147203424.jpg" class="testimonial-img" alt="">
+                <h3>Anthony Mackenzi</h3>
+                <h4>Customer Support & Operations Specialist</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>During my time as the AGM at Nekfa Australia,  I had the time to closely associate with Nimnaka in many aspects. He works as the UI/ UX Developer for the development team and has actively contributed to designing new websites and upgrading the existing ones when required. He is committed and has the ability to grasp the technicalities fast. He likes to learn new things and is a well-mannered individual who will adjust to any challenging environment. I wish him all the very best in his path to success.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/images/Screenshot 2024-07-15 225440.png" class="testimonial-img" alt="">
+                <h3>Niresha Udayaratne</h3>
+                <h4>Assistant General Manager</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I had the pleasure of working directly with Nimnaka at Hemas Holdings PLC in the cybersecurity domain. He excelled in handling SOC cases and communicated effectively with stakeholders. His design skills, readiness, and willingness to work were impressive, making him a valuable asset to our team. I highly recommend Nimnaka and wish him the best in his future endeavors.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/images/blob.jpeg" class="testimonial-img" alt="">
+                <h3>Niroshan Tharanga</h3>
+                <h4>Cyber Security Manager</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Volunteer Works - Section starting -->
+    <section id="volunteer">
+      <div class="volunteer-container section-title">
+          <h2>Volunteer Work</h2>
+          <div class="volunteer-item">
+              <div class="carousel-container" id="carousel-campaign">
+                  <!-- Carousel for Campaign Volunteer -->
+                  <div class="carousel">
+                      <img src="assets/images/volunteer/WhatsApp Image 2024-07-18 at 14.20.48_01528226.jpg" alt="Campaign Volunteer Image 1">
+                      <img src="assets/images/volunteer/WhatsApp Image 2024-07-18 at 14.20.49_1de8194a.jpg" alt="Campaign Volunteer Image 2">
+                      <img src="assets/images/volunteer/WhatsApp Image 2024-07-18 at 14.20.49_904166e0.jpg" alt="Campaign Volunteer Image 3">
+                  </div>
+                  <button class="prev" onclick="prevSlide('carousel-campaign')">&#10094;</button>
+                  <button class="next" onclick="nextSlide('carousel-campaign')">&#10095;</button>
+              </div>
+              <div class="volunteer-description">
+                  <h3>Campaign Volunteer</h3>
+                  <p><strong>Organization:</strong> The Pearl Protectors</p>
+                  <p><strong>Category:</strong> Civil Rights and Social Action</p>
+                  <p>• In 2021, the volunteer awards ceremony was organized. And showed people about the importance of marine life.</p>
+              </div>
+          </div>
+  
+          <div class="volunteer-item">
+              <div class="carousel-container" id="carousel-zoologist">
+                  <!-- Carousel for Zoologist -->
+                  <div class="carousel">
+                      <img src="assets/images/volunteer/WhatsApp Image 2024-07-18 at 14.20.50_996871f2.jpg" alt="Zoologist Image 1">
+                      <img src="assets/images/volunteer/WhatsApp Image 2024-07-18 at 14.20.53_9fd934ee.jpg" alt="Zoologist Image 2">
+                      <img src="assets/images/volunteer/WhatsApp Image 2024-07-18 at 14.20.49_a97c3f30.jpg" alt="Zoologist Image 3">
+                  </div>
+                  <button class="prev" onclick="prevSlide('carousel-zoologist')">&#10094;</button>
+                  <button class="next" onclick="nextSlide('carousel-zoologist')">&#10095;</button>
+              </div>
+              <div class="volunteer-description">
+                  <h3>Zoologist</h3>
+                  <p><strong>Organization:</strong> Young Zoologists' Association of Sri Lanka</p>
+                  <p><strong>Category:</strong> Animal Welfare</p>
+                  <p>• Volunteered from the video and photo editing side.</p>
+                  <p>• Volunteered for animal enrichments.</p>
+              </div>
+          </div>
+  
+          <div class="volunteer-item">
+              <div class="carousel-container" id="carousel-media-head">
+                  <!-- Carousel for Assistant Treasurer and Media Head -->
+                  <div class="carousel">
+                      <img src="assets/images/volunteer/1675956953076.jpeg" alt="Assistant Treasurer and Media Head Image 1">
+                      <img src="assets/images/volunteer/1675956952817.jpeg" alt="Assistant Treasurer and Media Head Image 2">
+                      <img src="assets/images/volunteer/1675956952972.jpeg" alt="Assistant Treasurer and Media Head Image 3">
+                      <img src="assets/images/volunteer/1675956952877.jpeg" alt="Assistant Treasurer and Media Head Image 4">
+                      <img src="assets/images/volunteer/1675956952866.jpeg" alt="Assistant Treasurer and Media Head Image 5">
+                      <img src="assets/images/volunteer/1675956952894.jpeg" alt="Assistant Treasurer and Media Head Image 6">
+                      <img src="assets/images/volunteer/1675956952926.jpeg" alt="Assistant Treasurer and Media Head Image 7">
+                      <img src="assets/images/volunteer/1675956953016.jpeg" alt="Assistant Treasurer and Media Head Image 8">
+                      <img src="assets/images/volunteer/IMG-20230114-WA0025.jpg" alt="Assistant Treasurer and Media Head Image 9">
+                      <img src="assets/images/volunteer/314378660_3267635110119543_4303327371119279980_n.jpg" alt="Assistant Treasurer and Media Head Image 10">
+                      <img src="assets/images/volunteer/IMG-20220131-WA0001.jpg" alt="Assistant Treasurer and Media Head Image 11">
+                      <!-- <img src="assets/images/volunteer/1675956952820.jpeg" alt="Assistant Treasurer and Media Head Image 2"> -->
+                  </div>
+                  <button class="prev" onclick="prevSlide('carousel-media-head')">&#10094;</button>
+                  <button class="next" onclick="nextSlide('carousel-media-head')">&#10095;</button>
+              </div>
+              <div class="volunteer-description">
+                  <h3>Assistant Treasurer and Media Head</h3>
+                  <p><strong>Organization:</strong> Students' Activity Council of ACBT</p>
+                  <p><strong>Category:</strong> Social Services</p>
+                  <p>• Served as the Assistant Treasurer and Head of Media for the congregation.</p>
+                  <p>• Now I have trained a fresher and handed over the role of 'Media Head' to him.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section - Starts -->
+    <section id="certifications" class="certifications-xxl xxl">
+      <div class="container section-title-xxl" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <p>Here are some of the certifications I've earned from various online courses.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row certifications-content-xxl">
+          <div class="col-lg-6 col-md-6">
+            <ul class="certifications-list">
+              <li data-aos="fade-up" data-aos-delay="200">• Figma for UX Design - LinkedIn</li>
+              <li data-aos="fade-up" data-aos-delay="300">• Introduction to Web Design and Development - LinkedIn</li>
+              <li data-aos="fade-up" data-aos-delay="400">• UI/UX for Beginners - Great Learning</li>
+              <li data-aos="fade-up" data-aos-delay="500">• Web Development - Sololearn</li>
+              <li data-aos="fade-up" data-aos-delay="600">• Official (ISC)2 Certified in Cybersecurity (CC) Self-Paced Training - 1M - ISC2</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <ul class="certifications-list">
+              <li data-aos="fade-up" data-aos-delay="700">• Front-End Web Development - University of Moratuwa</li>
+              <li data-aos="fade-up" data-aos-delay="800">• Web Design for Beginners - University of Moratuwa</li>
+              <li data-aos="fade-up" data-aos-delay="900">• Demonstrating Theoretical and Practical Understanding of SQL - Sololearn</li>
+              <li data-aos="fade-up" data-aos-delay="1000">• Coding Fundamentals - Sololearn</li>
+              <li data-aos="fade-up" data-aos-delay="1100">• Become A Certified Web Developer From Scratch - EDUONIX</li>
+            </ul>
+          </div>
+          <div class="col-12 text-center" data-aos="fade-up">
+            <p>For more certifications, please visit my LinkedIn profile.</p>
+            <button class="liked" onclick="window.open('https://www.linkedin.com/in/nimnaka-kumaradasa-07283923a/details/certifications/', '_blank')">More on LinkedIn</button>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!-- Certifications Section - Ends -->
+
+    <!-- Interests Section - Starts -->
+    <section id="interests" class="interests-xxl xxl">
+      <div class="container section-title-xxl" data-aos="fade-up">
+        <h2>My Interests</h2>
+        <p>Here are some of my interests and hobbies.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row interests-content-xxl">
+          <!-- Interest: Acting -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="interest-box">
+              <div class="interest-image-wrapper">
+                <img src="assets/images/interests/acting-j52z9v019g227ba8.jpg" alt="Acting" class="interest-image rounded-circle">
+              </div>
+              <h3>Acting</h3>
+            </div>
+          </div>
+          <!-- Interest: Singing -->
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="interest-box">
+              <div class="interest-image-wrapper">
+                <img src="assets/images/interests/robbie-williams-singer-celebrity-microphone-wallpaper-preview.jpg" alt="Singing" class="interest-image rounded-circle">
+              </div>
+              <h3>Singing</h3>
+            </div>
+          </div>
+          <!-- Interest: Drawing -->
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="400">
+            <div class="interest-box">
+              <div class="interest-image-wrapper">
+                <img src="assets/images/interests/CE7Pvp.jpg" alt="Drawing" class="interest-image rounded-circle">
+              </div>
+              <h3>Drawing</h3>
+            </div>
+          </div>
+          <!-- Interest: Coding -->
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="interest-box">
+              <div class="interest-image-wrapper">
+                <img src="assets/images/interests/4k-programming-laptop-screen-4vreocvd6nnaal10.jpg" alt="Coding" class="interest-image rounded-circle">
+              </div>
+              <h3>Coding</h3>
+            </div>
+          </div>
+          <!-- Interest: Cooking -->
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+            <div class="interest-box">
+              <div class="interest-image-wrapper">
+                <img src="assets/images/interests/spoonful-of-spices-cooking-vwodnnl3zzdsqhbo.jpg" alt="Cooking" class="interest-image rounded-circle">
+              </div>
+              <h3>Cooking</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Interests Section - Ends -->
+    
+    <!-- JavaScript (for the carousel functionality) -->
+    <script>
+      function nextSlide(carouselId) {
+          const carousel = document.getElementById(carouselId).querySelector('.carousel');
+          carousel.appendChild(carousel.firstElementChild);
+      }
+  
+      function prevSlide(carouselId) {
+          const carousel = document.getElementById(carouselId).querySelector('.carousel');
+          carousel.insertBefore(carousel.lastElementChild, carousel.firstElementChild);
+      }
+    </script>
+    <!-- End of Volunteer Section -->
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Are you prepared to make your dream a reality? Collaborate with us to produce an impressive website or 
+          innovative design that makes a statement. We can help you realize your ideas, whether you're starting a new 
+          business or want to update existing online presence.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>5A, Polkotuwa Road, Rawathawatte, Moratuwa, Sri Lanka</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+94 77 0527 520</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>nimnakakumaradasa1@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!4v1721147918391!6m8!1m7!1s5uNLjhbtDECR2yKsOXeO3g!2m2!1d6.79283882752684!2d79.89022496295992!3f329.69213074160973!4f-6.852713111777874!5f0.7820865974627469" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.8103759039273!2d79.88765807575452!3d6.7929133199723655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDcnMzQuNSJOIDc5wrA1MycyNC44IkU!5e0!3m2!1sen!2slk!4v1721102442901!5m2!1sen!2slk" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="contact-form" action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <label for="name-field" class="pb-2">Your Name</label>
+                        <input type="text" name="name" id="name-field" class="form-control" placeholder="Your Name Here.." required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email-field" class="pb-2">Your Email</label>
+                        <input type="email" class="form-control" name="email" id="email-field" placeholder="Your Email Here.." required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="subject-field" class="pb-2">Subject</label>
+                        <input type="text" class="form-control" name="subject" placeholder="Subject.." id="subject-field" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="message-field" class="pb-2">Message</label>
+                        <textarea class="form-control" name="message" rows="10" id="message-field" placeholder="Climate change is no longer some far-off problem; it is happening here; it is happening now. 
+- Nimnaka Kumaradasa" required></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message"></div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(function() {
+            $('#contact-form').on('submit', function(e) {
+                e.preventDefault();
+        
+                var form = $(this);
+                var formData = form.serialize();
+        
+                $.ajax({
+                    type: 'POST',
+                    url: form.attr('action'),
+                    data: formData,
+                    beforeSend: function() {
+                        form.find('.loading').show();
+                        form.find('.error-message').hide();
+                        form.find('.sent-message').hide();
+                    },
+                    success: function(response) {
+                        form.find('.loading').hide();
+                        form.find('.sent-message').text(response).show();
+                    },
+                    error: function(jqXHR) {
+                        form.find('.loading').hide();
+                        form.find('.error-message').text(jqXHR.responseText).show();
+                    }
+                });
+            });
+        });
+        </script>            
+        <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <img src="assets/img/logo/Untitled-1.jpg" alt="logo" width="50px" height="50px">
+        <p>© 2024 <span>Copyright</span><strong class="px-1 sitename">Nimnaka Kumaradasa.</strong><span>All Rights Reserved.</span></p>
+        <p>Last update date is <span class="highlight-date">30<sup>th</sup></span> July 2024</p>
+      </div>
+      <!-- <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div> -->
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
