@@ -637,7 +637,8 @@ section,
 /* Mobile view */
 @media (max-width: 768px) {
   #hero {
-    background: url("../img/hero-bgsx-copy-mobile.jpg") no-repeat center center;
+    background: url("../img/hero-bgsx-copy-mobile-copy.jpg") no-repeat center
+      center;
     background-size: cover;
   }
 }
