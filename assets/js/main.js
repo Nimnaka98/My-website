@@ -312,6 +312,7 @@ document.addEventListener("DOMContentLoaded", function () {
     musicPlayerContainer.classList.remove("hidden");
     musicPlayerContainer.classList.add("show");
     generateBubbles(); // Start the bubbles effect
+    console.log("Music player container shown."); // Debug log
   }, 7000);
 
   const playMusicBtn = document.getElementById("play-music-btn");
@@ -322,33 +323,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.getElementById("close-music-player");
   const musicElements = document.querySelectorAll(".music");
 
+  // Play button event listener
   playMusicBtn.addEventListener("click", function () {
+    console.log("Play button clicked."); // Debug log
+
     // Expand the container and show the music list
     musicPlayerContainer.classList.add("expanded");
     musicList.classList.remove("hidden");
     document.getElementById("initial-text").style.display = "none"; // Hide the initial text
-
-    // Reset previously playing track
-    musicElements.forEach((music) => {
-      music.addEventListener("play", () => {
-        musicElements.forEach((otherMusic) => {
-          if (otherMusic !== music && !otherMusic.paused) {
-            otherMusic.pause();
-            otherMusic.currentTime = 0;
-          }
-        });
-      });
-    });
   });
 
   // Close button event listener
   closeBtn.addEventListener("click", function () {
+    console.log("Close button clicked."); // Debug log
+
     // Check if any music is playing
     let anyMusicPlaying = false;
     musicElements.forEach((music) => {
       if (!music.paused) {
         anyMusicPlaying = true;
         music.pause(); // Pause the music
+        console.log("Paused music."); // Debug log
       }
     });
 
@@ -357,12 +352,17 @@ document.addEventListener("DOMContentLoaded", function () {
       musicElements.forEach((music) => {
         music.pause();
         music.currentTime = 0;
+        console.log("Stopped and reset music."); // Debug log
       });
     }
 
-    // Hide the container
+    // Hide the container and reset its state
+    musicPlayerContainer.classList.remove("show", "expanded");
     musicPlayerContainer.classList.add("hidden");
-    musicPlayerContainer.classList.remove("show");
+    document.getElementById("initial-text").style.display = "block"; // Show the initial text again
+    musicList.classList.add("hidden"); // Hide the music list
+
+    console.log("Music player container closed."); // Debug log
   });
 
   // Meditation tips
