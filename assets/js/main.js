@@ -365,6 +365,21 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Music player container closed."); // Debug log
   });
 
+  // Add event listeners for each music track
+  musicElements.forEach((music, index) => {
+    music.addEventListener("play", function () {
+      console.log(`Track ${index + 1} playing`);
+
+      // Pause all other music tracks before playing the new one
+      musicElements.forEach((otherMusic) => {
+        if (otherMusic !== music) {
+          otherMusic.pause(); // Stop the other tracks
+          otherMusic.currentTime = 0; // Reset other tracks to the beginning
+        }
+      });
+    });
+  });
+
   // Meditation tips
   const tips = [
     "Take deep breaths and let go of stress.",
@@ -385,7 +400,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Generate bubbles
   function generateBubbles() {
     const container = document.getElementById("music-player-container");
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       let bubble = document.createElement("div");
       bubble.classList.add("bubble");
       bubble.style.left = `${Math.random() * 100}%`;
