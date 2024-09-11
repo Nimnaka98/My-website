@@ -249,9 +249,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentYear = new Date().getFullYear();
   document.getElementById("current-year").textContent = currentYear;
 
-  // Calculate the date 5 days ago
+  // Calculate the date 2 days ago
   const today = new Date();
-  const lastUpdatedDate = new Date(today.setDate(today.getDate() - 5));
+  const lastUpdatedDate = new Date(today.setDate(today.getDate() - 2));
 
   // Format the date (e.g., "5th September 2024")
   const day = lastUpdatedDate.getDate();
