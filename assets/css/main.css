@@ -1,15 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -160,13 +148,31 @@ h6 {
     color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+/* Profile Image Styling */
 .header .profile-img img {
   margin: 15px auto;
   display: block;
   width: 120px;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 50%;
+  animation: blink-circle 3s infinite;
+  box-shadow: 0 0 15px rgba(92, 1, 1, 0.5); /* Initial subtle shadow */
 }
 
+/* Blinking Animation */
+@keyframes blink-circle {
+  0% {
+    box-shadow: 0 0 15px rgba(232, 225, 0, 0.5); /* Transparent blue */
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 224, 120, 0.2); /* Dimmer blue */
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(1, 157, 55, 0.5); /* Return to original */
+  }
+}
+
+/* Logo Styling */
 .header .logo {
   line-height: 1;
   margin-bottom: 15px;
@@ -177,25 +183,33 @@ h6 {
   margin-right: 8px;
 }
 
+/* Logo Styling */
 .header .logo h1 {
-  font-size: 24px;
+  font-size: 16px; /* Slightly larger for more impact */
   margin: 0;
-  font-weight: 700;
+  font-weight: 700; /* Bold text */
   color: var(--heading-color);
+  font-family: "Poppins", sans-serif; /* Modern and clean font */
+  text-transform: uppercase; /* Make text all uppercase */
+  letter-spacing: 1px; /* Add some spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
+
+/* You can also add a font-face import if you are using a web font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 .header .social-links {
   margin: 0 0 20px 0;
 }
 
 .header .social-links a {
-  font-size: 16px;
+  font-size: 13px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: color-mix(in srgb, var(--default-color), transparent 90%);
   color: var(--default-color);
-  margin: 0 2px;
+  margin: 0 1px;
   border-radius: 50%;
   text-align: center;
   width: 35px;
@@ -269,7 +283,7 @@ h6 {
 .navmenu a,
 .navmenu a:focus {
   color: var(--nav-color);
-  padding: 15px 10px;
+  padding: 10px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
   font-weight: 400;
@@ -366,16 +380,31 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+/* Footer Styling for All Screens */
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  background: url("../img/nature-background.jpg") no-repeat center center;
-  background-size: cover;
   font-size: 14px;
   padding: 40px 0;
   position: relative;
   border-top: 1px solid
     color-mix(in srgb, var(--default-color), transparent 90%);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Background for Desktop View */
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url("../img/5631251_2970150.jpg");
+  }
+}
+
+/* Background for Mobile View */
+@media screen and (max-width: 767px) {
+  .footer {
+    background-image: url("../img/pngtree-blue-watercolor-texture-green-plant-leaves-bronzing-effect-picture-image_1738287.jpg");
+  }
 }
 
 .footer .copyright p {
@@ -1440,18 +1469,15 @@ textarea.form-control::placeholder {
   }
 }
 
-/* Time section */
 /* Time and Date Container Styles */
 .time-date-container {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  margin-top: 2px; /* Space from Contact */
+  background-color: rgba(72, 72, 72, 0.7); /* Semi-transparent background */
   color: #fff;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 8px;
   font-family: "Crimson Pro", sans-serif; /* Use the desired font */
-  z-index: 1000;
+  text-align: center;
 }
 
 #current-date,
