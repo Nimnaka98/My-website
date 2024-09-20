@@ -436,3 +436,69 @@ document.addEventListener("DOMContentLoaded", function () {
   updateDateTime();
   setInterval(updateDateTime, 1000);
 });
+
+// New celebration day section above the banner
+
+// Celebration Days Data
+const celebrationDays = [
+  { date: "2024-09-17", title: "Binara Full Moon Poya Day!" },
+  { date: "2024-09-21", title: "International Day of Peace" },
+  { date: "2024-09-27", title: "World Tourism Day" },
+  { date: "2024-09-29", title: "World Heart Day" },
+  { date: "2024-10-01", title: "International Day of Older Persons" },
+  // ... Add more celebrations as needed
+];
+
+// Function to update the celebration text
+function updateCelebrationDay() {
+  const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
+  const celebration = celebrationDays.find(
+    (celebration) => celebration.date === today
+  );
+
+  if (celebration) {
+    document.getElementById(
+      "celebration-day"
+    ).textContent = `Today's Celebration: ${celebration.title}`;
+    createConfetti(); // Trigger confetti animation when there's a celebration
+  } else {
+    document.getElementById("celebration-day").textContent =
+      "No world celebration today";
+  }
+}
+
+// Function to create confetti
+function createConfetti() {
+  const confettiCount = 100; // Number of confetti pieces
+  const banner = document.getElementById("celebration-banner");
+
+  for (let i = 0; i < confettiCount; i++) {
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+
+    // Randomize the confetti position and color
+    confetti.style.setProperty("--color", getRandomColor());
+    confetti.style.setProperty("--position", Math.random() * 100);
+    confetti.style.setProperty("--delay", Math.random() * 2);
+
+    banner.appendChild(confetti);
+  }
+}
+
+// Function to get random confetti colors
+function getRandomColor() {
+  const colors = [
+    "#ff6b6b",
+    "#fca311",
+    "#6a994e",
+    "#3a86ff",
+    "#e63946",
+    "#a8dadc",
+    "#457b9d",
+    "#f4a261",
+  ];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+// Run the update function when the page loads
+window.onload = updateCelebrationDay;
