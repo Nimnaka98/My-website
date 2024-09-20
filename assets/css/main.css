@@ -1485,3 +1485,77 @@ textarea.form-control::placeholder {
   margin: 0;
   font-size: 14px;
 }
+
+/* The new celebration text above the celebration banner section  */
+/* Celebration Day Text Styling */
+#celebration-day {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Confetti Animation */
+@keyframes confettiFall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Confetti Falling from Left */
+.confetti-left {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: var(--color);
+  top: -20px;
+  left: 0;
+  animation: confettiFall 3s linear infinite;
+  transform-origin: left;
+}
+
+/* Confetti Falling from Right */
+.confetti-right {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: var(--color);
+  top: -20px;
+  right: 0;
+  animation: confettiFall 3s linear infinite;
+  transform-origin: right;
+}
+
+/* Customize each confetti's fall path and speed */
+.confetti-left:nth-child(odd),
+.confetti-right:nth-child(odd) {
+  animation-duration: 2.5s;
+}
+
+.confetti-left:nth-child(even),
+.confetti-right:nth-child(even) {
+  animation-duration: 3.5s;
+}
+
+/* Random confetti colors */
+.confetti {
+  background-color: var(--color);
+}
+
+/* Confetti Random Rotation */
+@keyframes confettiRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
