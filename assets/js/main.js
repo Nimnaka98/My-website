@@ -442,10 +442,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // Celebration Days Data
 const celebrationDays = [
   { date: "2024-09-17", title: "Binara Full Moon Poya Day!" },
-  { date: "2024-09-21", title: "International Day of Peace" },
-  { date: "2024-09-27", title: "World Tourism Day" },
-  { date: "2024-09-29", title: "World Heart Day" },
-  { date: "2024-10-01", title: "International Day of Older Persons" },
+  { date: "2024-09-21", title: "International Day of Peace!" },
+  { date: "2024-09-27", title: "World Tourism Day!" },
+  { date: "2024-09-29", title: "World Heart Day!" },
+  { date: "2024-10-01", title: "International Day of Older Persons!" },
+  { date: "2024-10-21", title: "International Red Panda Day! 🐼🔴" },
+  { date: "2024-10-22", title: "World Rhino Day! 🦏" },
+  { date: "2024-10-23", title: "International Day of Sign Languages! 🦏" },
   // ... Add more celebrations as needed
 ];
 
