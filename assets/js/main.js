@@ -452,8 +452,20 @@ const celebrationDays = [
   { date: "2024-09-28", title: "World Rabies Day!" },
   { date: "2024-09-29", title: "World Heart Day!" },
   { date: "2024-09-30", title: "International Translation Day!" },
-  { date: "2024-10-01", title: "International Day of Older Persons!" },
+  { date: "2024-10-01", title: "International Day of Older Persons! 👴🏻👵🏻" },
+  { date: "2024-10-02", title: "International Day of Non-Violence!" },
+  { date: "2024-10-04", title: "World Animal Welfare Day!" },
+  { date: "2024-10-05", title: "World Teachers' Day!" },
+  { date: "2024-10-06", title: "World Smile Day!" },
+  { date: "2024-10-07", title: "World Habitat Day!" },
+  { date: "2024-10-08", title: "World Sight Day!" },
+  { date: "2024-10-09", title: "World Post Day!" },
+  { date: "2024-10-10", title: "World Mental Health Day!" },
+  { date: "2024-10-11", title: "International Day of the Girl" },
+  { date: "2024-10-12", title: "World Arthritis Day!" },
+  { date: "2024-10-13", title: "International Day for Disaster Reduction" },
   { date: "2024-10-21", title: "International Red Panda Day! 🐼🔴" },
+  { date: "2024-10-22", title: "World Statistics Day!" },
   // ... Add more celebrations as needed
 ];
 
