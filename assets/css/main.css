@@ -1559,3 +1559,26 @@ textarea.form-control::placeholder {
     transform: rotate(360deg);
   }
 }
+
+/* Styles for the contact us section - images */
+
+/* Hide mobile image by default */
+.mobile-image {
+  display: none;
+}
+
+/* Show desktop image by default */
+.desktop-image {
+  display: block;
+}
+
+/* When screen width is 768px or less (mobile view), show mobile image and hide desktop image */
+@media only screen and (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+}
