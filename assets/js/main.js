@@ -461,11 +461,22 @@ const celebrationDays = [
   { date: "2024-10-08", title: "World Sight Day!" },
   { date: "2024-10-09", title: "World Post Day!" },
   { date: "2024-10-10", title: "World Mental Health Day!" },
-  { date: "2024-10-11", title: "International Day of the Girl" },
+  { date: "2024-10-11", title: "International Day of the Girl!" },
   { date: "2024-10-12", title: "World Arthritis Day!" },
-  { date: "2024-10-13", title: "International Day for Disaster Reduction" },
+  { date: "2024-10-13", title: "International Day for Disaster Reduction!" },
+  { date: "2024-10-14", title: "World Standards Day!" },
+  { date: "2024-10-15", title: "World White Cane Safety!" },
+  { date: "2024-10-16", title: "World Food Day!" },
+  { date: "2024-10-17", title: "Vap Full Moon Poya Day! ☸️🪷🪬" },
+  { date: "2024-10-18", title: "International Day for Overcoming!" },
+  { date: "2024-10-19", title: "World Osteoporosis!" },
+  { date: "2024-10-20", title: "World Statistics Day!" },
   { date: "2024-10-21", title: "International Red Panda Day! 🐼🔴" },
-  { date: "2024-10-22", title: "World Statistics Day!" },
+  { date: "2024-10-22", title: "World Statistics Day! 📊" },
+  { date: "2024-10-23", title: "World Polio Day!" },
+  { date: "2024-10-24", title: "United Nations Day!" },
+  { date: "2024-10-25", title: "World Pasta Day!" },
+  { date: "2024-10-26", title: "World Day for Audiovisual!" }
   // ... Add more celebrations as needed
 ];
 
@@ -522,3 +533,6 @@ function getRandomColor() {
 
 // Run the update function when the page loads
 window.onload = updateCelebrationDay;
+
+
+// Script for Resume Section - Start
