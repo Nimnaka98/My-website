@@ -476,7 +476,9 @@ const celebrationDays = [
   { date: "2024-10-23", title: "World Polio Day!" },
   { date: "2024-10-24", title: "United Nations Day!" },
   { date: "2024-10-25", title: "World Pasta Day!" },
-  { date: "2024-10-26", title: "World Day for Audiovisual!" }
+  { date: "2024-10-26", title: "World Day for Audiovisual!" },
+  { date: "2024-10-30", title: "National Treat Your Pet Day!" },
+  { date: "2024-10-31", title: "🎇🪔 Happy Diwali! 🏵️🧨" },
   // ... Add more celebrations as needed
 ];
 
@@ -494,7 +496,7 @@ function updateCelebrationDay() {
     createConfetti(); // Trigger confetti animation when there's a celebration
   } else {
     document.getElementById("celebration-day").textContent =
-      "No world celebration today";
+      "Every Day is a Celebration Day! 😊";
   }
 }
 
@@ -533,6 +535,5 @@ function getRandomColor() {
 
 // Run the update function when the page loads
 window.onload = updateCelebrationDay;
-
 
 // Script for Resume Section - Start
