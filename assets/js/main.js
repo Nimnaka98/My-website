@@ -479,6 +479,19 @@ const celebrationDays = [
   { date: "2024-10-26", title: "World Day for Audiovisual!" },
   { date: "2024-10-30", title: "National Treat Your Pet Day!" },
   { date: "2024-10-31", title: "🎇🪔 Happy Diwali! 🏵️🧨" },
+  { date: "2024-11-01", title: "National Sushi Day! 🍣" },
+  { date: "2024-11-02", title: "World Animal Day!" },
+  { date: "2024-11-03", title: "World Vegan Day!" },
+  { date: "2024-11-04", title: "National Candy Day! 🍬🍭" },
+  { date: "2024-11-05", title: "World Tsunami Day!"},
+  { date: "2024-11-06", title: "World Diabetes Day!" },
+  { date: "2024-11-07", title: "World Radiography Day!"},
+  { date: "2024-11-08", title: "World Radiography Day!"},
+  { date: "2024-11-09", title: "World Freedom Day!"},
+  { date: "2024-11-10", title: "World Science Day!" },
+  { date: "2024-11-11", title: "Veterans Day!" },
+  { date: "2024-11-12", title: "World Pneumonia Day!"},
+  { date: "2024-11-13", title: "World Kindness Day!"},
   // ... Add more celebrations as needed
 ];
 
